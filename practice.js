@@ -58,24 +58,52 @@
 // console.log(total) ;
 
 
-const bottle = {
 
-    color:'yellow',
-    hold:'water',
-    price:50,
-    isCleaned:true
+
+// const keys = Object.keys(bottle);
+// const values = Object.values(bottle);
+// const pairs = Object.entries(bottle);
+// Object.seal(bottle)
+// delete bottle.isCleaned;
+
+
+
+// console.log(bottle);
+// console.log(keys);
+
+// console.log(values);
+// console.log(pairs);
+
+
+// const bottle = {
+
+//     color:'yellow',
+//     hold:'water',
+//     price:50,
+//     isCleaned:true
+// }
+
+const f ={a:1};
+const e ={a:1};
+
+
+
+if(JSON.stringify(f) == JSON.stringify(e)){
+   console.log('yes') 
+}else{
+    console.log('no') 
 }
 
-const keys = Object.keys(bottle);
-const values = Object.values(bottle);
-const pairs = Object.entries(bottle);
-Object.seal(bottle)
-delete bottle.isCleaned;
+function compareObject(obj1,obj2){
 
+    if(Object.keys(obj1).length !== Object.keys(obj2).length){
+        return false;
+    }
+    for (const prop in obj1){
 
+        if(obh1[prop] !== obj2[prop]){
 
-console.log(bottle);
-console.log(keys);
+        }
+    }
 
-console.log(values);
-console.log(pairs);
+}
